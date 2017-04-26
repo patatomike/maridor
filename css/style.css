@@ -8,7 +8,7 @@ body, html {
 	height: 100% !important;
 }
 h2 {
-	margin: 0 0 20px 0;
+	margin: 120px 0 20px 0;
 	font-weight: 400;
 	font-size: 36px;
 	text-transform: uppercase;
@@ -130,7 +130,6 @@ hr {
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #6aaf08;
 	padding: 14px 20px;
 	letter-spacing: 1px;
 	margin: 0;
@@ -140,10 +139,37 @@ hr {
 	transition: all 0.3s;
 	border-radius: 0px; /*Michael : overwrite bootstrap border radius*/
 }
-.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+
+/* Michael : 26.04.17 : Add classes to allocate specific colors to text, overlays, btns, ... */
+.btn-green{
+	background-color: #6aaf08;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green.focus, .btn-green:active, .btn-green.active {
 	color: #fff;
 	background-color: #5f9d07;
 }
+
+.btn-orange{
+	background-color: #EF8528;
+}
+
+.btn-orange:hover, .btn-orange:focus, .btn-orange.focus, .btn-orange:active, .btn-orange.active {
+	color: #fff;
+	background-color: #e26200;
+}
+
+.text-green{
+	color : #6aaf08;
+}
+
+.text-orange{
+	color : #EF8528;
+}
+
+/* Colors allocation - end */
+
+
 .btn:active, .btn.active {
 	background-image: none;
 	outline: 0;
@@ -228,19 +254,9 @@ header .intro-text {
 
 /* About Section */
 #about {
-	padding: 120px 0 80px 0;
 	background: #f6f6f6;
 }
-#about h3 {
-	font-size: 22px;
-	font-weight: 600;
-	margin: 20px 0 0 0;
-}
-#about .about-text span {
-	color: #70ad47;
-	font-weight: 700;
-	letter-spacing: -1px;
-}
+
 #about hr {
 	margin-left: 0;
 	margin-bottom: 40px;
@@ -262,6 +278,45 @@ header .intro-text {
 	margin-top: 20px;
 }
 /* Services Section */
+
+/* 26.04.17 : Michael : tile-design */
+
+.tile-list{
+	height : 475px;
+	font-size: 12px;
+}
+
+.tile-list .tile-content{
+	margin : 60px 30px 0 30px;
+}
+
+.tile-list h3{
+	font-size: 16px;
+	font-weight: 600;
+	color: #4A4A4A;
+	text-transform: uppercase;
+}
+
+.tile-list p{
+	font-size: 14px;
+	color : #717882;
+	text-align: justify;
+	text-align-last: left;
+}
+
+.tile-1{
+	background-color: #FCFCFC;
+}
+.tile-2{
+	background-color: #F9F9F9;
+}
+.tile-3{
+	background-color: #F7F7F7;
+}
+.tile-4{
+	background-color: #F4F4F4;
+}
+
 /*Michael Sketch to Html : 21 April 2017 */
 #services .overlay {
 	padding: 120px 0;
