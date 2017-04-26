@@ -304,6 +304,20 @@ header .intro-text {
 	text-align-last: left;
 }
 
+.tile-list h1{
+	font-size: 60px;
+	font-family: "Libre Baskerville";
+	color: #4A4A4A;
+}
+
+.tile-list h1::after{
+	content:".";
+	font-size: 60px;
+	color : #6aaf08;
+}
+
+
+
 .tile-1{
 	background-color: #FCFCFC;
 }
@@ -315,6 +329,17 @@ header .intro-text {
 }
 .tile-4{
 	background-color: #F4F4F4;
+}
+
+.img-decoration-container{
+	height: 475px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 /*Michael Sketch to Html : 21 April 2017 */
