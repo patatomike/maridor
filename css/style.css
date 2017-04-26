@@ -330,6 +330,12 @@ header .intro-text {
 .tile-4{
 	background-color: #F4F4F4;
 }
+.tile-5{
+	background-color: #F2F2F2;
+}
+.tile-6{
+	background-color: #EFEFEF;
+}
 
 .img-decoration-container{
 	height: 475px;
@@ -406,19 +412,18 @@ ol.type li a {
 	padding: 8px 16px;
 	background: #e6e6e6;
 	border: 0;
-	border-radius: 4px;
+	border-radius: 0px; /*Michael : overwrite bootstrap radius */
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	transition: all 0.3s;
+
 }
-ol.type li a.active {
-	background: #EF8528;
+ol.type li a.active,
+ol.type li a:hover{
+	background: #6aaf08;
 	color: #fff;
 }
-ol.type li a:hover {
-	background: #EF8528;
-	color: #fff;
-}
+
 .isotope-item {
 	z-index: 2
 }
@@ -449,9 +454,23 @@ ol.type li a:hover {
 	-webkit-transition-property: -webkit-transform, opacity;
 	-moz-transition-property: -moz-transform, opacity;
 	transition-property: transform, opacity;
+	padding-left: 0px;
+  padding-right: 0px;
 }
-.portfolio-item {
-	margin: 15px 0;
+
+.portfolio-item{
+	margin:0;
+}
+.portfolio-item-img {
+	margin: 0;
+	height: 400px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 .portfolio-item .hover-bg {
 	overflow: hidden;
