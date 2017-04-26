@@ -138,6 +138,7 @@ hr {
 	font-weight: 400;
 	margin-top: 20px;
 	transition: all 0.3s;
+	border-radius: 0px; /*Michael : overwrite bootstrap border radius*/
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
