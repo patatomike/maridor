@@ -14,6 +14,7 @@ h2 {
 	text-transform: uppercase;
 	color: #333;
 }
+
 h3, h4 {
 	font-size: 20px;
 	font-weight: 400;
@@ -276,6 +277,25 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin-top: 20px;
+	text-align: justify;
+	text-align-last: left;
+}
+
+#about .img-decoration-container{
+	height: 600px;
+}
+
+/* Equipe section */
+
+#equipe .img-decoration-container{
+	height: 750px;
+}
+
+#equipe p {
+	line-height: 24px;
+	margin-top: 20px;
+	text-align: justify;
+	text-align-last: left;
 }
 /* Services Section */
 
@@ -349,51 +369,67 @@ header .intro-text {
 }
 
 /*Michael Sketch to Html : 21 April 2017 */
-#services .overlay {
-	padding: 120px 0;
+#chiffres .overlay {
+	padding: 100px 0;
 	background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#6670ad47', GradientType=0 ); /* IE6-9 */
 }
 
-#services {
+#chiffres {
 	background: #444 url(../img/services.jpg) center center no-repeat fixed;
 	background-size: cover;
 }
-#services .service-media {
+#chiffres .service-media {
 	margin: 10px;
 }
-#services .service-media img {
+#chiffres .service-media img {
 	position: relative;
 	width: 225px;
 	height: 225px;
 	border-radius: 50%;
 	border: 10px solid rgba(255,255,255,0.1);
 }
-#services .service-desc {
+#chiffres .service-desc {
 	margin: 10px 10px 40px;
 	text-align: center;
 }
-#services h2 {
+#chiffres h2 {
+	margin: 30px 0 10px 0 ;
 	color: #fff;
+	font-weight: 700;
 }
-#services h3 {
+#chiffres h3 {
 	color: #fff;
 	font-size: 24px;
 	font-weight: 400;
 	padding: 5px 0;
 }
-#services p {
+#chiffres p {
 	color: rgba(255,255,255,0.9);
+	font-size:24px;
 }
-#services hr {
+#chiffres hr {
 	background: rgba(255,255,255,0.6);
 }
 /* Portfolio Section */
-#portfolio {
+
+#services .entretien{
 	padding: 100px 0;
-	background: #f6f6f6;
+	background: #FCFCFC;;
+}
+
+#services .creation{
+	padding: 100px 0;
+	background: #f4f4f4;
+}
+
+#services p{
+	text-align: justify;
+	text-align-last: left;
+	margin: 40px auto;
+	max-width: 500px
 }
 .categories {
 	text-align: center;
@@ -675,4 +711,33 @@ color: #777;
 }
 #footer a:hover {
 	color: #ccc;
+}
+
+
+/*Page Services */
+
+.intro-ctn{
+	padding:120px 0;
+}
+
+.intro-ctn p{
+	text-align: justify;
+	text-align-last: left;
+	margin: 0 auto;
+}
+
+#entretiens .tile-list,
+#entretiens .img-decoration-container,
+#creations .tile-list,
+#creations .img-decoration-container{
+	height: 550px;
+}
+
+#entretiens .tile-content,
+#creations .tile-content{
+	margin-top:100px;
+}
+
+.container-fluid{
+	padding: 0;
 }
